@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linktree Tess</title>
+  <!-- Link Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: url('picture/anak-it.jpg') no-repeat center center fixed; /* URL gambar anak sedang coding */
+      background-size: cover; /* Memastikan gambar memenuhi seluruh layar */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box; /* Pastikan padding dihitung dalam ukuran total */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.8); /* Warna putih transparan untuk latar container */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile {
+      text-align: center;
+    }
+
+    .profile-picture {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .profile-description {
+      font-size: 14px;
+      color: gray;
+      margin-top: 5px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 300px;
+      margin-top: 20px;
+    }
+
+    .link-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .link-button:hover {
+      background-color: #0056b3;
+    }
+
+    .link-button i {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="picture/minions-despicable-me-3-2017-movies-animated-movies-wallpaper-preview.jpg" alt="Profile Picture" class="profile-picture">
+      <h1 class="profile-name">Minion Terhebat</h1>
+      <p class="profile-description">Minion adalah karakter fiksi berbentuk makhluk kuning dan berjenis kelamin laki-laki yang muncul dalam film Despicable Me dan Minions. 
+        Minion dikenal sebagai pelayan dari Gru, tokoh utama dalam film tersebut.</p>
+    </div>
+    <div class="links">
+      <a href="https://www.instagram.com/briggithbawinto_" target="_blank" class="link-button">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.facebook.com/bawinto.ralfy" target="_blank" class="link-button">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+    </div>
+  </div>
+
+  <!-- Tambahkan kode JavaScript di bawah ini -->
+  <script>
+    // Contoh: Mengubah nama profil secara dinamis
+    document.addEventListener('DOMContentLoaded', () => {
+      const profileName = document.querySelector('.profile-name');
+      profileName.textContent = 'Minion Terhebat';
+    });
+
+    // Contoh: Menambahkan interaksi pada tombol
+    const links = document.querySelectorAll('.link-button');
+    links.forEach((link, index) => {
+      link.addEventListener('click', () => {
+        console.log(`Link ${index + 1} diklik!`);
+      });
+    });
+  </script>
+</body>
+</html>
