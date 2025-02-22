@@ -11,6 +11,7 @@ body {
   overflow: hidden;
 }
 
+/* Background container */
 .background-container {
   position: fixed;
   inset: 0;
@@ -26,6 +27,7 @@ body {
   transition: opacity 2.5s ease-in-out;
 }
 
+/* Tampilkan gambar pertama secara default */
 .background-container .bg.active {
   opacity: 1;
 }
